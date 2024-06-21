@@ -1,0 +1,16 @@
+.transactions-table-top,
+.transactions-table-top-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.transactions-table-top {
+  justify-content: space-between;
+}
+
+.chart-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

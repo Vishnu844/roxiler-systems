@@ -1,0 +1,82 @@
+.table-wrapper {
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.transactions-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: cornflowerblue;
+  color: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f3;
+}
+
+tr:hover {
+  background-color: #cbdef5;
+}
+
+.transactions-table-cell {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transaction-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.table-footer {
+  color: rgb(165, 164, 164);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search-bar {
+  margin: 1rem;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #959595;
+  outline: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span {
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination__disable {
+  opacity: 0;
+}
+
+.pagination__selected {
+  background-color: rgb(220, 220, 220);
+}

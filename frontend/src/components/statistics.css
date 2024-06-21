@@ -1,0 +1,24 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2rem;
+}
+
+.table {
+  width: fit-content;
+  padding: 1rem;
+  background-color: cornflowerblue;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.field h4 {
+  width: 150px;
+}
