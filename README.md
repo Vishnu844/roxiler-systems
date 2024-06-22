@@ -1,8 +1,8 @@
-# MERN Stack Web Application Documentation
+# MERN Stack Coding Challenge
 
 ## Overview
 
-This documentation provides an overview of a web application built using the MERN stack (MongoDB, Express, React, Node.js). The application fetches product transaction data from the backend and renders a table, statistics section, and bar chart on the frontend.
+This documentation provides an overview of a Product Transactions web application built using the MERN stack (MongoDB, Express, React, Node.js). The application fetches product transaction data from the backend and renders a table, statistics section, and bar chart on the frontend.
 
 ## Table of Contents
 
