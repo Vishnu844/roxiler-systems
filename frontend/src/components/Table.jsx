@@ -38,7 +38,11 @@ const Content = ({ entries, columns }) => {
                       className="transaction-image"
                     />
                   ) : column === "sold" ? (
-                    entry[column].toString()
+                    entry[column] === true ? (
+                      "Item sold"
+                    ) : (
+                      "Available"
+                    )
                   ) : column === "price" ? (
                     `$ ${entry[column].toFixed(2)}`
                   ) : (
@@ -82,6 +86,9 @@ const Table = ({ searchValue, selectedMonth }) => {
           setTransactions(data.data);
           setTotalPages(data.totalPages);
         }
+      })
+      .catch((err) => {
+        alert(err);
       });
   }, [searchValue, page, selectedMonth]);
 
@@ -90,18 +97,28 @@ const Table = ({ searchValue, selectedMonth }) => {
       <div className="table-wrapper">
         <table className="transactions-table">
           <Header columns={columns} />
-          <Content entries={transactions} columns={columns} />
+          {transactions.length !== 0 ? (
+            <Content entries={transactions} columns={columns} />
+          ) : (
+            <div className="table-message">
+              No Transactions available that are related to search criteria
+            </div>
+          )}
         </table>
-        {totalPages > 1 ? (
-          <Pagination
-            page={page}
-            totalPages={totalPages}
-            selectPage={selectPage}
-          />
+        {transactions.length !== 0 ? (
+          totalPages > 1 ? (
+            <Pagination
+              page={page}
+              totalPages={totalPages}
+              selectPage={selectPage}
+            />
+          ) : (
+            <div className="table-footer">
+              Fetched transactions are less than 10 - No pagination needed
+            </div>
+          )
         ) : (
-          <div className="table-footer">
-            Fetched transactions are less than 10 - No pagination needed
-          </div>
+          <></>
         )}
       </div>
     </>

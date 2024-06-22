@@ -9,8 +9,14 @@
   justify-content: space-between;
 }
 
-.chart-wrapper{
+.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.message {
+  color: rgb(244, 107, 107);
+  text-align: center;
+  margin: 2rem;
 }

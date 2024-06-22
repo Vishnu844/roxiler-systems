@@ -16,6 +16,7 @@ const SearchBar = ({ searchTable }) => {
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
         />
+        <button>🔍</button>
       </form>
     </div>
   );

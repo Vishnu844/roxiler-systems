@@ -23,10 +23,19 @@ function App() {
         </div>
       </div>
       <Table searchValue={searchValue} selectedMonth={selectedMonth} />
-      <Statistics selectedMonth={selectedMonth} />
-      <div className="chart-wrapper">
-        <BarChart selectedMonth={selectedMonth} />
-      </div>
+      {selectedMonth !== "" ? (
+        <>
+          <Statistics selectedMonth={selectedMonth} />
+          <div className="chart-wrapper">
+            <BarChart selectedMonth={selectedMonth} />
+          </div>
+        </>
+      ) : (
+        <div className="message">
+          Please select a valid month to get Transaction Statistics and Bar chart
+          status
+        </div>
+      )}
     </>
   );
 }

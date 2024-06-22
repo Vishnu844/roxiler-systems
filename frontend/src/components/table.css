@@ -38,6 +38,13 @@ tr:hover {
   object-fit: cover;
 }
 
+.table-message {
+  min-width: 100vw;
+  color: rgb(244, 107, 107);
+  text-align: center;
+  margin-top: 10px;
+}
+
 .table-footer {
   color: rgb(165, 164, 164);
   text-align: center;
@@ -53,6 +60,23 @@ tr:hover {
   border: none;
   border-bottom: 1px solid #959595;
   outline: none;
+}
+
+.search-bar button {
+  padding: 5px;
+  border: 0;
+  background: white;
+  border-bottom: 1px solid #959595;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.search-bar button:hover {
+  background: #f2f2f3;
+}
+
+.search-bar button:focus {
+  background: #dbdada;
 }
 
 .links {

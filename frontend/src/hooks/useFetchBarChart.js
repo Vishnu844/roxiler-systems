@@ -23,7 +23,7 @@ export default function useFetchBarChart(selectedMonth) {
           ],
         });
       } catch (err) {
-        console.log(err);
+        alert(err);
       }
     };
     fetchChartData();

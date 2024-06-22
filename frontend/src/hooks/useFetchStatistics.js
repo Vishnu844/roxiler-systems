@@ -10,7 +10,7 @@ export default function useFetchStatistics(selectedMonth) {
         const data = await res.json();
         setData(data);
       } catch (err) {
-        console.log(err);
+        alert(err);
       }
     };
     fetchData();
