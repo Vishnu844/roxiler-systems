@@ -8,8 +8,8 @@ This documentation provides an overview of a Product Transactions web applicatio
 
 1. [Installation](#installation)
 2. [Backend Setup](#backend-setup)
-3. [Frontend Setup](#frontend-setup)
-4. [API Endpoints](#api-endpoints)
+3. [API Endpoints](#api-endpoints)
+4. [Frontend Setup](#frontend-setup)
 5. [Features](#features)
 6. [Technologies Used](#technologies-used)
 7. [Folder Structure](#folder-structure)
